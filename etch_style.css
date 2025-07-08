@@ -1,0 +1,15 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero{
+    height : 2vw;
+    border: 1px solid red;
+}
+
+.board{
+    height: 80vW;
+    border: 1px solid red;
+}
