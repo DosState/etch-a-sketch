@@ -1,15 +1,46 @@
 body {
+    margin: 0px;
+    padding:0px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-start;
+    --CornflowerBlue: #6495ED;
+    --squareDim: 0%;
+    --startColor: #ffffff;
 }
 
 .hero{
-    height : 2vw;
-    border: 1px solid red;
+    font-family: sans-serif;
+    font-size: 100%;
+    font-weight: 600;
+    height : 10vh;
+    width: 100vw;
+    margin: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 0px;
+    background-color: cornflowerblue;
 }
 
 .board{
-    height: 80vW;
-    border: 1px solid red;
+    height: 90vh;
+    width: 100vw;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+/*
+.square{
+    --brightness: 1;
+    margin: 0px;
+    padding: 0px;
+    width: var(--squareDim);
+    height: var(--squareDim);
+    filter: --brightness;
+}*/
