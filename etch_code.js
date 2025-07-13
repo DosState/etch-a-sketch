@@ -1,3 +1,12 @@
+function getRandomColor(){
+    let letters = "0123456789ABCDEF";
+    var color = "#";
+    for (let i=0; i<6; i++){
+        color+=letters[Math.floor(Math.random()*16)];
+    }
+    return color
+}
+
 function drawBoard(numOfSquares){
     let root = 0;
     let dim = 0;
@@ -15,7 +24,7 @@ function drawBoard(numOfSquares){
         square.style.padding = "0px";
         square.style.width = "var(--squareDim)";
         square.style.height = "var(--squareDim)";
-        square.style.backgroundColor = "white";
+        square.style.backgroundColor = getRandomColor();
         square.style.filter = "brightness(var(--brightness))";
         square.classList.add("square");
         square.addEventListener("mouseenter",(event)=>{
